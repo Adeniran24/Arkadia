@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
     font-family: 'Press Start 2P', cursive;
     background-color: #141414;
@@ -114,24 +114,3 @@ h4 {
 
   .pointer {cursor: pointer;}
 
-=======
-@font-face {
-    font-family: 'BDCartoonShoutRegular';
-    src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  #pacman {
-    height:450px;
-    width:342px;
-    margin:20px auto;
-  }
-  #shim { 
-    font-family: BDCartoonShoutRegular; 
-    position:absolute;
-    visibility:hidden
-  }
-  h1 { font-family: BDCartoonShoutRegular; text-align:center; }
-  body { width:342px; margin:0px auto; font-family:sans-serif; }
-  a { text-decoration:none; }
->>>>>>> parent of 076f8f9 (as)
