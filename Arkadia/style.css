@@ -1,0 +1,112 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #141414;
+    color: #00ffcc;
+    text-align: center;
+    margin: 0;
+}
+
+a {
+    color: #ff66ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 8px #ff66ff71;
+    color: #ff33cc;
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #ff33cc;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #00ffcc;
+}
+
+.navbar-brand:hover {
+    text-shadow: 0 0 8px #00ffcc;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff66ff;
+    text-shadow: 0 0 8px #ff66ff;
+}
+
+.btn-primary, .btn-outline-success, .btn-outline-warning {
+    background-color: #00ffcc;
+    border: none;
+    color: #2b2b2b;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00ffcc71, inset 0 0 5px #00ffcc71;
+}
+
+.btn-primary:hover, .btn-outline-success:hover, .btn-outline-warning:hover {
+    background-color: #ff33cc;
+    color: #2b2b2b;
+    box-shadow: 0 0 15px #ff33cc71, inset 0 0 5px #ff33cc71;
+}
+
+.form-control {
+    background-color: #1a1a1a;
+    color: #00ffcc;
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 5px #00ffcc;
+}
+
+.form-control:focus {
+    background-color: #1a1a1a;
+    color: #ff33cc;
+    border-color: #ff33cc;
+    box-shadow: 0 0 10px #ff33cc71;
+}
+
+.form-floating label {
+    color: #00ffcc;
+}
+
+.form-floating:focus-within label {
+    color: #ff33cc;
+}
+
+.form-signin h1 {
+    color: #ff66ff;
+    text-shadow: 0 0 8px #ff66ff68;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-top: 2px solid #ff33cc;
+}
+
+.footer span {
+    color: #00ffcc;
+}
+
+img {
+    border: 4px solid #00ffcc;
+    box-shadow: 0 0 10px #00ffcc71;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+h4 {
+    color: #ff66ff;
+    text-shadow: 0 0 8px #ff66ff;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
