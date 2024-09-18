@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-
-    <audio src="/Arkadia/8bit1.wav" autoplay loop auto></audio>
+    <audio src="/Arkadia/8bit1.wav" autoplay loop></audio>
 
     <title>Árkádia</title>
-    
 </head>
-<body >
+<body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -41,24 +39,27 @@
             </ul>
             <form class="d-flex">
                 <button class="btn btn-outline-success" type="submit">Login</button>
-              <button class="btn btn-outline-warning" type="submit">Register</button>
+                <button class="btn btn-outline-warning" type="submit">Register</button>
             </form>
           </div>
         </div>
-      </nav>
+    </nav>
 
     <div class="container">
-        ide kell az árkád gép háttér a játékok mögé
+        <h2 class="text-center my-3">Pac-Man Game</h2>
+        <div id="score" class="text-center">Score: 0</div>
+        <div class="game-container">
+            <!-- The game grid will be dynamically inserted here -->
+        </div>
     </div>
-      
 
-
-      <footer class="footer mt-auto py-3 bg-light">
+    <footer class="footer mt-auto py-3 bg-light">
         <div class="container">
           <span class="text-muted">Place sticky footer content here.</span>
         </div>
-      </footer>
+    </footer>
     
+    <script src="pacman.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
-
