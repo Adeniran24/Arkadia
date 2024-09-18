@@ -41,7 +41,7 @@ a:hover {
     text-shadow: 0 0 8px #ff66ff;
 }
 
-.btn-primary, .btn-outline-success, .btn-outline-warning {
+.btn-primary, .btn-outline-success, .btn-outline-warning, .img-thumbnail {
     background-color: #00ffcc;
     border: none;
     color: #2b2b2b;
@@ -49,7 +49,7 @@ a:hover {
     box-shadow: 0 0 10px #00ffcc71, inset 0 0 5px #00ffcc71;
 }
 
-.btn-primary:hover, .btn-outline-success:hover, .btn-outline-warning:hover {
+.btn-primary:hover, .btn-outline-success:hover, .btn-outline-warning:hover, .img-thumbnail:hover {
     background-color: #ff33cc;
     color: #2b2b2b;
     box-shadow: 0 0 15px #ff33cc71, inset 0 0 5px #ff33cc71;
