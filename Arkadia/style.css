@@ -1,10 +1,10 @@
-
 body {
     font-family: 'Press Start 2P', cursive;
     background-color: #141414;
     color: #00ffcc;
     text-align: center;
     margin: 0;
+    position: relative;
 }
 
 a {
@@ -42,7 +42,7 @@ a:hover {
     text-shadow: 0 0 8px #ff66ff;
 }
 
-.btn-primary, .btn-outline-success, .btn-outline-warning {
+.btn-primary, .btn-outline-success, .btn-outline-warning, .img-thumbnail {
     background-color: #00ffcc;
     border: none;
     color: #2b2b2b;
@@ -50,7 +50,7 @@ a:hover {
     box-shadow: 0 0 10px #00ffcc71, inset 0 0 5px #00ffcc71;
 }
 
-.btn-primary:hover, .btn-outline-success:hover, .btn-outline-warning:hover {
+.btn-primary:hover, .btn-outline-success:hover, .btn-outline-warning:hover, .img-thumbnail:hover {
     background-color: #ff33cc;
     color: #2b2b2b;
     box-shadow: 0 0 15px #ff33cc71, inset 0 0 5px #ff33cc71;
@@ -63,34 +63,15 @@ a:hover {
     box-shadow: 0 0 5px #00ffcc;
 }
 
-.form-control:focus {
-    background-color: #1a1a1a;
-    color: #ff33cc;
-    border-color: #ff33cc;
-    box-shadow: 0 0 10px #ff33cc71;
-}
-
-.form-floating label {
-    color: #00ffcc;
-}
-
-.form-floating:focus-within label {
-    color: #ff33cc;
-}
-
-.form-signin h1 {
-    color: #ff66ff;
-    text-shadow: 0 0 8px #ff66ff68;
-}
-
 .footer {
     background-color: #1a1a1a;
     color: #ffffff;
     border-top: 2px solid #ff33cc;
-}
-
-.footer span {
-    color: #00ffcc;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 img {
@@ -99,18 +80,58 @@ img {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-h4 {
-    color: #ff66ff;
-    text-shadow: 0 0 8px #ff66ff;
+.stars-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+.pixel {
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    position: absolute;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100vh); }
+    100% { transform: translateY(100vh); }
+}
+
+.crt {
+    position: relative;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: #000;
+    overflow: hidden;
   }
-
-  .pointer {cursor: pointer;}
-
+  
+  .crt::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+  
+  .crt-content {
+    padding: 20px;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 2px #0f0;
+  }

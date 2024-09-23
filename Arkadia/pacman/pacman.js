@@ -168,7 +168,6 @@ Pacman.Ghost = function (game, map, colour) {
         ctx.quadraticCurveTo(left, top, left + (s/2),  top);
         ctx.quadraticCurveTo(left + s, top, left+s,  base);
         
-        // Wavy things at the bottom
         ctx.quadraticCurveTo(tl-(inc*1), base+high, tl - (inc * 2),  base);
         ctx.quadraticCurveTo(tl-(inc*3), base+low, tl - (inc * 4),  base);
         ctx.quadraticCurveTo(tl-(inc*5), base+high, tl - (inc * 6),  base);
