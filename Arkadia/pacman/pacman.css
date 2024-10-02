@@ -16,8 +16,8 @@ body {
 
 .arcade-machine {
     position: relative;
-    width: 800px; 
-    height: 1000px;
+    width: 700px; 
+    height: 850px;
     background-color: #000;
     border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(0, 255, 204, 0.5), inset 0px 0px 10px #000000;
@@ -46,8 +46,8 @@ body {
     position: absolute;
     top: 140px;
     left: 20px;
-    width: 760px; 
-    height: 720px;
+    width: 640px; 
+    height: 550px;
     background-color: #000;
     border: 8px solid #ff33cc;
     border-radius: 10px;
