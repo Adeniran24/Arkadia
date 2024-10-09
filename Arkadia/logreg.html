@@ -1,4 +1,9 @@
-<!--
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!--
 <?php
 session_start();
 include("connect.php");
@@ -6,9 +11,7 @@ include("connect.php");
 ?>
 -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -33,8 +36,9 @@ include("connect.php");
       </nav>
 
     <div class="container ">
-        <main class="form-signin" id="signin" style="display:none;">
-          <form method="post" action="/Arkadia/php/register.php">
+        <main class="form-signin" id="signin" style="display: block;">
+          <!--method="post" action="/Arkadia/php/register.php" -->
+          <form >
             <img class="mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVq-OmHL5H_5P8b1k306pFddOe3049-il2A&s" alt="" >
             <h1 class="h3 mb-3 fw-normal">Please log in</h1>
         
@@ -73,8 +77,9 @@ include("connect.php");
           </form>
         </main>
         
-        <main class="form-signup" id="signup" >
-            <form method="post" action="/Arkadia/php/register.php">
+        <main class="form-signup" id="signup" style="display:none;">
+          <!-- method="post" action="/Arkadia/php/register.php" -->
+            <form  >
               <img class="mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVq-OmHL5H_5P8b1k306pFddOe3049-il2A&s" alt="" >
               <h1 class="h3 mb-3 fw-normal">Registration</h1>
         
@@ -115,7 +120,7 @@ include("connect.php");
     </div>
         
 
-      <script src="./php/script.js"></script>
+      <script src="./logreg.js"></script>
 
 
 
