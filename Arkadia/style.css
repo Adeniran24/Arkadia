@@ -7,6 +7,11 @@ body {
     position: relative;
 }
 
+.img-thumbnail{
+    height: 300px;
+    width: 375px;
+}
+
 a {
     color: #ff66ff;
     text-decoration: none;
