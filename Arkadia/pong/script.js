@@ -171,7 +171,6 @@ var Game = {
 					this.ball.x = (this.player.x + this.ball.width);
 					this.ball.moveX = DIRECTION.RIGHT;
 
-					beep1.play();
 				}
 			}
 
@@ -181,7 +180,6 @@ var Game = {
 					this.ball.x = (this.paddle.x - this.ball.width);
 					this.ball.moveX = DIRECTION.LEFT;
 
-					beep1.play();
 				}
 			}
 		}
@@ -203,7 +201,6 @@ var Game = {
 				this.ball.speed += 1;
 				this.round += 1;
 
-				beep3.play();
 			}
 		}
 		// Check to see if the paddle/AI has won the round.
@@ -345,7 +342,6 @@ var Game = {
 		this.timer = (new Date()).getTime();
 
 		victor.score++;
-		beep2.play();
 	},
 
 	// Wait for a delay to have passed after each turn.
