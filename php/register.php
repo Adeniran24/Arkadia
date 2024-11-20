@@ -22,7 +22,7 @@ $email = $_POST['email'];
 $query = "INSERT INTO users (username, password, email) VALUES ('$username', '$password', '$email')";
 
 //Run the query
-$result = mysqli_query($db, $query);
+$result = mysqli_query($conn, $query);
 
 //Check if the query was successful
 if($result)
