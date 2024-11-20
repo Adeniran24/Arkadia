@@ -18,7 +18,13 @@ $result = mysqli_query($conn, $query);
 //Check if the query was successful
 if(mysqli_num_rows($result) > 0)
 {
-    echo 'Login successful';
+    //Redirect to the home page
+    //homepage is at path:C:\xampp\htdocs\IKT.ADENIRAN\Arkadia\base.html
+    //php is at path:C:\xampp\htdocs\IKT.ADENIRAN\Arkadia\php\login.php
+    //So we need to go back to the homepage
+    header('Location: ../base.html');    
+    
+
 }
 else
 {
