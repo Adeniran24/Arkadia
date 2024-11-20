@@ -1,49 +1,49 @@
-<?php 
+<?php
 
-include 'connect.php';
+//Register.php
+//This script performs an INSERT query to add a record to the users table
+//A record has 4 fields: id(automatically added),username, password, and email
 
-if(isset($_POST['signUp'])){
-    $name=$_POST['uName'];
-    $email=$_POST['email'];
-    $password=$_POST['password'];
-    $password=md5($password);
+//Connect to the MySQL database
+require 'connect.php';
 
-     $checkEmail="SELECT * From users where email='$email'";
-     $result=$conn->query($checkEmail);
-     if($result->num_rows>0){
-        echo "Email Address Already Exists !";
-     }
-     else{
-        $insertQuery="INSERT INTO users(uName,email,password)
-                       VALUES ('$name','$email','$password')";
-            if($conn->query($insertQuery)==TRUE){
-                header("location: index.php");
-            }
-            else{
-                echo "Error:".$conn->error;
-            }
-     }
-   
+//Get the POST variables
 
+$username = $_POST['username'];
+$password = $_POST['password'];
+$email = $_POST['email'];
+
+
+
+
+
+
+//Insert the record
+$query = "INSERT INTO users (username, password, email) VALUES ('$username', '$password', '$email')";
+
+//Run the query
+$result = mysqli_query($db, $query);
+
+//Check if the query was successful
+if($result)
+{
+    echo 'Record added';
+}
+else
+{
+    echo 'Error adding record';
 }
 
-if(isset($_POST['signIn'])){
-   $email=$_POST['email'];
-   $password=$_POST['password'];
-   $password=md5($password) ;
-   
-   $sql="SELECT * FROM users WHERE email='$email' and password='$password'";
-   $result=$conn->query($sql);
-   if($result->num_rows>0){
-    session_start();
-    $row=$result->fetch_assoc();
-    $_SESSION['email']=$row['email'];
-    header("Location: homepage.php");
-    exit();
-   }
-   else{
-    echo "Not Found, Incorrect Email or Password";
-   }
 
-}
+
+
+
+
+
+
+
+
+
+
+
 ?>
