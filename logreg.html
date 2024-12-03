@@ -17,7 +17,8 @@
         </div>
     </nav>
 
-    <div class="container my-5" id="signIn">
+    <div class="container my-5" id="signIn" style="display: block;">
+        <img class="mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVq-OmHL5H_5P8b1k306pFddOe3049-il2A&s" alt="" >
         <h1 class="form-title mb-4">Sign In</h1>
         <form method="post" action="http://localhost/IKT.ADENIRAN/Arkadia/php/login.php">
             <div class="input-group mb-3">
@@ -32,10 +33,22 @@
                 <a href="#">Recover Password</a>
             </p>
             <input type="submit" class="btn btn-primary w-100" value="Sign In" name="signIn">
+            <p class="or">
+                ----------or--------
+              </p>
+              <div class="links">
+                <p>Don't have account yet?</p>
+                <button id="signUpButton">Register</button>
+              </div>
+  
+  
+  
+              <p class="mt-5 mb-3 ">© 2024–2025</p>
         </form>
     </div>
 
-    <div class="container my-5" id="signUp">
+    <div class="container my-5" id="signUp" style="display: none;">
+        <img class="mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVq-OmHL5H_5P8b1k306pFddOe3049-il2A&s" alt="" >
         <h1 class="form-title mb-4">Sign Up</h1>
         <form method="post" action="http://localhost/IKT.ADENIRAN/Arkadia/php/register.php">
             <div class="input-group mb-3">
@@ -51,9 +64,20 @@
                 <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
             </div>
             <input type="submit" class="btn btn-primary w-100" value="Sign Up" name="signUp">
+            <p class="or">
+                ----------or--------
+              </p>
+              <div class="links">
+                <p>Already Have Account ?</p>
+                <button id="signInButton">Log In</button>
+              </div>
+
+
+              <p class="mt-5 mb-3 ">© 2024–2025</p>
         </form>
     </div>
 
     <script src="script.js"></script>
+    <script src="logreg.js"></script>
 </body>
 </html>
