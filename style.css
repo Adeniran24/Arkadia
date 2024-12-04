@@ -145,3 +145,14 @@ img {
     margin-top: 1%;
 
 }
+
+
+.profKep{
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 10px #00ffcc71;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
