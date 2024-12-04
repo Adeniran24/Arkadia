@@ -6,10 +6,10 @@
 //The table has 4 fields: id(automatically added),username, password, and email
 
 //Connect to the MySQL database
-$server = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'usermanager';
+$server = '92.113.22.16:3306';
+$username = 'u963849950_Adeniran';
+$password = 'Kutya1234';
+$database = 'u963849950_users';
 
 $conn = mysqli_connect($server, $username, $password, $database);
 
