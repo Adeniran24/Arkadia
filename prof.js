@@ -11,13 +11,13 @@ const profil=document.getElementById('Logged');
 
 //ide if es elágazás kell, hogy ha be van jelentkezve, akkor a logreg gombot elrejtsük, a profil gombot megjelenítsük, adatbázis adatoktól függően
 logreg.addEventListener('click',function(){
-    signInForm.style.display="none";
-    signUpForm.style.display="block";
+    logreg.style.display="none";
+    profil.style.display="block";
 });
 
 profil.addEventListener('click', function(){
-    signInForm.style.display="block";
-    signUpForm.style.display="none";
+    logreg.style.display="block";
+    profil.style.display="none";
 });
 
 }
