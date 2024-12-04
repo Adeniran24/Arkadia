@@ -7,7 +7,7 @@ body {
     position: relative;
 }
 
-.img-thumbnail{
+.img-thumbnail {
     height: 300px;
     width: 375px;
 }
@@ -15,11 +15,6 @@ body {
 a {
     color: #ff66ff;
     text-decoration: none;
-}
-
-a:hover {
-    text-shadow: 0 0 8px #ff66ff71;
-    color: #ff33cc;
 }
 
 .navbar {
@@ -58,7 +53,6 @@ a:hover {
 .btn-primary:hover, .btn-outline-success:hover, .btn-outline-warning:hover, .img-thumbnail:hover {
     background-color: #ff33cc;
     color: #2b2b2b;
-    box-shadow: 0 0 15px #ff33cc71, inset 0 0 5px #ff33cc71;
 }
 
 .form-control {
@@ -114,9 +108,9 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background: #000;
     overflow: hidden;
-  }
-  
-  .crt::before {
+}
+
+.crt::before {
     content: '';
     position: absolute;
     top: 0;
@@ -132,27 +126,86 @@ img {
     );
     pointer-events: none;
     mix-blend-mode: overlay;
-  }
-  
-  .crt-content {
+}
+
+.crt-content {
     padding: 20px;
     color: #0f0;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 0 0 2px #0f0;
-  }
+}
 
 .container {
     margin-top: 1%;
-
 }
 
-
-.profKep{
-    width: 25%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+/* Simplified About Me Box */
+.about-me-box {
+    background-color: rgba(0, 0, 0, 0.8);
     border: 2px solid #00ffcc;
-    box-shadow: 0 0 10px #00ffcc71;
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px #00ffcc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.about-me-box h1 {
+    color: #ff66ff;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-shadow: 0 0 5px #ff33cc;
+}
+
+.about-me-box h3 {
+    color: #ff33cc;
+    margin-bottom: 15px;
+}
+
+.about-me-box p {
+    color: #00ffcc;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px #00ffcc;
+    line-height: 1.6;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ff66ff;
+    box-shadow: 0 0 10px #ff33cc;
+    margin: 10px auto;
+}
+
+.statistics-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 10px #00ffcc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.statistics-box h2 {
+    color: #ff66ff;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.statistics-box table {
+    width: 100%;
+    color: #00ffcc;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.statistics-box table tr td {
+    padding: 8px 15px;
+    border-bottom: 1px solid #00ffcc;
+    text-shadow: 0 0 5px #00ffcc;
 }
