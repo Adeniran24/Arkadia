@@ -1,207 +1,184 @@
+/* General Background and Font Styling */
 body, html {
-    background-image: url('https://s19.postimg.cc/53hmmyd9f/stars-3000x2000-pink-cosmos-hd-7164.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #fff;
-    font-family: 'Lucida Console';
+    background-color: #141414;
+    background-image: radial-gradient(circle at center, #333 0%, #000 70%);
+    color: #00ffcc;
+    font-family: 'Press Start 2P', cursive;
     height: 100%;
     overflow: hidden;
     text-align: center;
     min-width: 700px;
-}
-
-.wrapper {
+  }
+  
+  /* Wrapper Styling with Glow */
+  .wrapper {
     display: inline-flex;
     justify-content: center;
     margin: 1vh 0;
-    padding: 1% 1% .5% 1%;
-    background: rgba(0, 0, 0, .65);
-    box-shadow: -1px 5px 5px rgba(0, 0, 0, .75);
-}
-
-.modal {
+    padding: 1% 1% 0.5% 1%;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 20px rgba(0, 255, 204, 0.5), inset 0px 0px 10px #000000;
+    border-radius: 15px;
+    border: 2px solid #ff33cc;
+  }
+  
+  /* Modal Box */
+  .modal {
     margin-top: 20vh !important;
-    border: solid .05em #fff;
-    box-shadow: -15px 20px 20px rgba(0, 0, 0, .75) !important;
-}
-
-.modal-content {
+    border: solid 0.05em #ff33cc;
+    box-shadow: -15px 20px 20px rgba(0, 0, 0, 0.75), inset 0px 0px 10px #000;
+    background-color: #222;
+    border-radius: 10px;
+  }
+  
+  /* Modal Content */
+  .modal-content {
     background: #202028;
-}
-
-.modal-content .btn {
-    font-size: 18px !important;
-}
-
-.modal-content input {
-    color: white;
+    color: #00ffcc;
+    padding: 1em;
+  }
+  
+  .modal-content .btn {
+    font-size: 18px;
+    background-color: #009688;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #00ffcc;
+    transition: background-color 0.2s ease;
+  }
+  
+  .modal-content .btn:hover {
+    background-color: #00bfa5;
+    box-shadow: 0px 0px 10px #00ffcc;
+  }
+  
+  .modal-content input {
+    color: #00ffcc;
     font-size: 24px !important;
-    width: 50% !important;
+    width: 50%;
     text-align: center;
-}
-
-.modal-content label {
-    font-size: 16px !important;
-}
-
-.btn:focus {
+    background-color: #141414;
+    border: 2px solid #ff33cc;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 10px #000, 0px 0px 5px #ff33cc;
+  }
+  
+  .modal-content label {
+    font-size: 16px;
+    color: #ff33cc;
+    text-shadow: 0px 0px 5px #ff33cc;
+  }
+  
+  /* Focus Styling */
+  .btn:focus {
     background-color: #00bfa5 !important;
-}
-
-.btn {
-    background-color: #009688 !important;
-}
-
-.yourScore {
-    padding-bottom: 0px; 
-}
-
-.detailsLeft {
+    box-shadow: 0px 0px 10px #00ffcc;
+  }
+  
+  /* Left Panel Details */
+  .detailsLeft {
     width: 130px;
     position: relative;
     height: 90vh;
     margin: 0% 2%;
     text-align: right;
     font-size: 16px;
-}
-
-.highScores {
+    color: #00ffcc;
+  }
+  
+  .highScores {
     position: absolute;
     bottom: 35px;
     right: 0px;
     line-height: 10px;
     font-size: 14px;
-}
-
-.detailsRight {
+    color: #ff33cc;
+    text-shadow: 0px 0px 5px #ff33cc;
+  }
+  
+  /* Right Panel Details */
+  .detailsRight {
     position: relative;
     height: 90vh;
     margin: 2% 2% 0% 2%;
     text-align: left;
-}
-
-.next {
+    color: #00ffcc;
+  }
+  
+  /* Next Item Section */
+  .next {
     height: 15vh;
-    border: solid .1em #fff;
-}
-
-.controls {
+    border: solid 0.1em #ff33cc;
+    background-color: #222;
+    box-shadow: inset 0px 0px 10px #000, 0px 0px 10px #ff33cc;
+  }
+  
+  /* Controls Section */
+  .controls {
     position: absolute;
     bottom: 50px;
     left: 0px;
     font-size: 12px;
     line-height: 8px;
-}
-
-.tetris {
+    color: #00ffcc;
+  }
+  
+  /* Tetris Grid */
+  .tetris {
     height: 90vh;
-    border: solid .25em #fff;
-}
-
-.footer {
+    border: solid 0.25em #ff33cc;
+    background-color: #141414;
+    box-shadow: inset 0px 0px 10px #000, 0px 0px 20px rgba(0, 255, 204, 0.5);
+  }
+  
+  /* Footer Section */
+  .footer {
     position: absolute;
     bottom: 0;
     font-size: 12px;
-    color: rgba(255, 255, 255, .85);
+    color: rgba(0, 255, 204, 0.85);
     line-height: 0px;
-}
-
-.footer a:link, a:visited, a:active {
-    color: rgba(255, 255, 255, .85);
+  }
+  
+  .footer a:link, a:visited, a:active {
+    color: rgba(0, 255, 204, 0.85);
     text-decoration: none;
-}
-
-.footer a:link:hover {
-    color: white;
+  }
+  
+  .footer a:hover {
+    color: #ff33cc;
     text-decoration: none;
-}
-
-@media (max-width: 920px), (max-height: 800px){
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 920px), (max-height: 800px){
     body, html {
-        font-size: 16px;
-        margin: 0px !important;
+      font-size: 16px;
+      margin: 0 !important;
     }
-    
+  
     .modal {
-        width: 25vw !important;
-        margin-top: 20vh !important;
-        border: solid .05em #fff;
-        box-shadow: -15px 20px 20px rgba(0, 0, 0, .75) !important;
-        min-width: 500px;
+      width: 25vw !important;
+      min-width: 500px;
     }
-    
-    .modal-content {
-        background: #202028;
-    }
-    
-    .modal-content .btn {
-        font-size: 14px !important;
-    }
-    
+  
     .modal-content input {
-        color: white;
-        font-size: 12px !important;
-        width: 50% !important;
-        text-align: center;
+      font-size: 12px !important;
     }
-    
-    .modal-content label {
-        font-size: 14px !important;
+  
+    .detailsLeft, .detailsRight {
+      font-size: 14px;
+      margin: 5%;
     }
-    
-    .wrapper {
-        display: inline-flex;
-        justify-content: center;
-        background: rgba(0, 0, 0, .5) !important;
-        padding: 0% 0%;
-        background: rgba(0, 0, 0, .65);
-        margin: 0px !important;
-        height: 100%;
-        width: 100%;
-    }
-    
-    .detailsLeft {
-        height: 80vh;
-        width: 110px;
-        margin: 5% 1% 0% 0%;
-        font-size: 14px;
-    }
-    
-    .score-title {
-        font-size: 14px;
-    }
-    
-    .highScores {
-        line-height: 8px;
-        font-size: 12px;
-    }
-    
-    .detailsRight {
-        height: 80vh;
-        width: 120px;
-        margin: 5% 0% 0% 1%;
-        text-align: left;
-    }
-    
-    .next {
-        border: solid .1em #fff;
-        height: 12vh;
-    }
-    
-    .controls {
-        line-height: 8px;
-        font-size: 12px;
-    }
-    
+  
     .tetris {
-        height: 85vh;
-        border: solid .25em #fff;
-        margin-bottom: 2%;
-        margin-top: 2%;
+      height: 85vh;
+      margin: 2% 0;
     }
-    
+  
     .footer {
-        font-size: 12px;
+      font-size: 12px;
     }
-}
+  }
+  
