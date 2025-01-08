@@ -13,26 +13,42 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 $email = $_POST['email'];
 
-
-
-
-
-
-//Insert the record
-$query = "INSERT INTO users (username, password, email) VALUES ('$username', '$password', '$email')";
-
-//Run the query
+//Check if the record already exists
+$query = "SELECT * FROM users WHERE username='$username' OR email='$email'";
 $result = mysqli_query($conn, $query);
 
-//Check if the query was successful
-if($result)
+if(mysqli_num_rows($result) > 0)
 {
-    echo 'Record added';
+    
+   
+    echo 'Record already exists';
+
+    header('refresh:3; url=../logreg.html');
+    
 }
 else
 {
-    echo 'Error adding record';
+    
+    $query = "INSERT INTO users(username, password, email) VALUES('$username', '$password', '$email')";
+    $result = mysqli_query($conn, $query);
+    
+    if($result)
+    {
+        echo 'Record added';
+    }
+    else
+    {
+        echo 'Record not added';
+    }
 }
+
+
+
+
+
+
+
+
 
 
 
